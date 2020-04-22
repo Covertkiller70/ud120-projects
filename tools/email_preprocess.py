@@ -4,10 +4,9 @@ import pickle
 import cPickle
 import numpy
 
-from sklearn import cross_validation
+from sklearn import model_selection as cross_validation
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_selection import SelectPercentile, f_classif
-
 
 
 def preprocess(words_file = "../tools/word_data.pkl", authors_file="../tools/email_authors.pkl"):
